@@ -14,7 +14,7 @@ def calc(fig, func, size):
 		func (str) - название функции
 		size (list) - размер
 	Возвращаемое значение:
-		Функция ничего не возвращает
+		ничего не возвращает
 	'''
 	assert fig in figs
 	assert func in funcs
