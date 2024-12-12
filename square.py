@@ -1,5 +1,11 @@
 
 def area(a):
+    if not isinstance(a, (int, float)):
+        raise TypeError("value error, value cannot contain letters")
+    if a < 0:
+        raise ValueError("value error, the value must be greater than 0")
+    return a * a
+
     '''
     Функция для вычисления площади квадрата:
     Параметры:
@@ -7,10 +13,14 @@ def area(a):
     Возвращаемое значение:
         a*a - площадь квадрата 
     '''
-    return a * a
-
 
 def perimeter(a):
+    if not isinstance(a, (int, float)):
+        raise TypeError("value error, value cannot contain letters")
+    if a < 0:
+        raise ValueError("value error, the value must be greater than 0")
+    return 4 * a
+
     '''
     Функция для вычисления периметра квадрата:
     Параметры:
@@ -18,4 +28,4 @@ def perimeter(a):
     Возвращаемое значение:
         4*a - периметр квадрата 
     '''
-    return 4 * a
+
