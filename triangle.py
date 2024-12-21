@@ -20,4 +20,3 @@ def perimeter(a, b, c):
     if not valid_triangle(a, b, c):
         raise ValueError("value error, the property of triangles is not fulfilled")
     return a + b + c
-
