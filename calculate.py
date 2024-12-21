@@ -59,3 +59,4 @@ if __name__ == "__main__":
         print(f'The {func} of the {fig} is {result}')
     except (ValueError, TypeError, AssertionError) as e:
         print(f"An error occurred: {e}")
+        
