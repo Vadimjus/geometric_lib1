@@ -3,15 +3,15 @@ import math
 
 def area(r):
     if not isinstance(r, (int, float)):
-        raise TypeError("value error, value cannot contain letters")
+        raise TypeError("Radius must be a number")
     if r < 0:
-        raise ValueError("value error, the value must be greater than 0")
+        raise ValueError("Radius cannot be negative")
     return math.pi * r * r
-    
+
 
 def perimeter(r):
     if not isinstance(r, (int, float)):
-        raise TypeError("value error, value cannot contain letters")
+        raise TypeError("Radius must be a number")
     if r < 0:
-        raise ValueError("value error, the value must be greater than 0")
+        raise ValueError("Radius cannot be negative")
     return 2 * math.pi * r
