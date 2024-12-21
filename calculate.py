@@ -51,7 +51,8 @@ if __name__ == "__main__":
     params = 1
     while len(size) != params:
         try:
-            size = list(map(float, input(f"Provide {params} dimension(s) for the figure, separated by spaces:\n").split()))
+            size = list(map(float, input(f"Provide {params} dimension(s) for the figure"
+                                         "separated by spaces:\n").split()))
         except ValueError:
             print("Input must be valid numbers. Please try again.")
             continue

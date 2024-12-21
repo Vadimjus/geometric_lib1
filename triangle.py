@@ -8,7 +8,7 @@ def area(a, b, c):
     if any(x <= 0 for x in (a, b, c)):
         raise ValueError("value error, the value must be greater than 0")
     if not valid_triangle(a, b, c):
-        raise ValueError("value error, the property of triangles is not fulfilled")
+        raise ValueError("value error, the property of triangles")
     s = (a + b + c) / 2
     return (s * (s - a) * (s - b) * (s - c)) ** 0.5
 
@@ -19,5 +19,5 @@ def perimeter(a, b, c):
     if any(x <= 0 for x in (a, b, c)):
         raise ValueError("value error, the value must be greater than 0")
     if not valid_triangle(a, b, c):
-        raise ValueError("value error, the property of triangles is not fulfilled")
+        raise ValueError("value error, the property of triangles")
     return a + b + c

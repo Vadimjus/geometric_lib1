@@ -15,5 +15,3 @@ def perimeter(r):
     if r < 0:
         raise ValueError("value error, the value must be greater than 0")
     return 2 * math.pi * r
-
-    
