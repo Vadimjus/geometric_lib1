@@ -418,4 +418,3 @@ class TestCalculate:
 
         result = calculate.calc(figure, operation, size)
         assert result == expected
-        
