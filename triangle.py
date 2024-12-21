@@ -1,6 +1,7 @@
 def valid_triangle(a, b, c):
     return (a + b > c) and (b + c > a) and (a + c > b)
 
+
 def area(a, b, c):
     if not all(isinstance(x, (int, float)) for x in (a, b, c)):
         raise TypeError("value error, value cannot contain letters")

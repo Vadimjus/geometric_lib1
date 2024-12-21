@@ -5,6 +5,7 @@ import circle
 import square
 import triangle
 
+
 class TestCircle:
     class TestCircleArea:
         def test_positive_radius(self):
@@ -417,4 +418,3 @@ class TestCalculate:
 
         result = calculate.calc(figure, operation, size)
         assert result == expected
-        

@@ -10,6 +10,7 @@ sizes = {
     'perimeter-square': 1
 }
 
+
 def calc(fig, func, size):
     assert fig in figs, f"Invalid figure. Choose from: {figs}"
     assert func in funcs, f"Invalid operation. Choose from: {funcs}"
@@ -35,6 +36,7 @@ def calc(fig, func, size):
             return square.area(size[0])
         return square.perimeter(size[0])
 
+
 if __name__ == "__main__":
     func = ''
     fig = ''
@@ -59,4 +61,3 @@ if __name__ == "__main__":
         print(f'The {func} of the {fig} is {result}')
     except (ValueError, TypeError, AssertionError) as e:
         print(f"An error occurred: {e}")
-        
